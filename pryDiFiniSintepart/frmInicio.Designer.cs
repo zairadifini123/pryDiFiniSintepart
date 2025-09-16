@@ -1,6 +1,6 @@
 ﻿namespace pryDiFiniSintepart
 {
-    partial class Inicio
+    partial class frmInicio
     {
         /// <summary>
         /// Required designer variable.
@@ -42,9 +42,9 @@
             // 
             lblUsuario.AutoSize = true;
             lblUsuario.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblUsuario.Location = new Point(58, 60);
+            lblUsuario.Location = new Point(51, 45);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(94, 31);
+            lblUsuario.Size = new Size(77, 25);
             lblUsuario.TabIndex = 0;
             lblUsuario.Text = "Usuario";
             // 
@@ -52,9 +52,9 @@
             // 
             lblContraseña.AutoSize = true;
             lblContraseña.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblContraseña.Location = new Point(58, 128);
+            lblContraseña.Location = new Point(51, 96);
             lblContraseña.Name = "lblContraseña";
-            lblContraseña.Size = new Size(131, 31);
+            lblContraseña.Size = new Size(109, 25);
             lblContraseña.TabIndex = 1;
             lblContraseña.Text = "Contraseña";
             // 
@@ -62,44 +62,48 @@
             // 
             lblModulo.AutoSize = true;
             lblModulo.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblModulo.Location = new Point(58, 201);
+            lblModulo.Location = new Point(51, 151);
             lblModulo.Name = "lblModulo";
-            lblModulo.Size = new Size(96, 31);
+            lblModulo.Size = new Size(79, 25);
             lblModulo.TabIndex = 2;
             lblModulo.Text = "Modulo";
             // 
             // txtUsuario
             // 
             txtUsuario.ForeColor = Color.Blue;
-            txtUsuario.Location = new Point(250, 64);
+            txtUsuario.Location = new Point(219, 48);
+            txtUsuario.Margin = new Padding(3, 2, 3, 2);
             txtUsuario.MaxLength = 10;
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(125, 27);
+            txtUsuario.Size = new Size(110, 23);
             txtUsuario.TabIndex = 3;
             // 
             // txtContraseña
             // 
-            txtContraseña.Location = new Point(250, 132);
+            txtContraseña.Location = new Point(219, 99);
+            txtContraseña.Margin = new Padding(3, 2, 3, 2);
             txtContraseña.MaxLength = 10;
             txtContraseña.Name = "txtContraseña";
             txtContraseña.PasswordChar = '#';
-            txtContraseña.Size = new Size(125, 27);
+            txtContraseña.Size = new Size(110, 23);
             txtContraseña.TabIndex = 4;
             // 
             // cmbModulo
             // 
             cmbModulo.FormattingEnabled = true;
             cmbModulo.Items.AddRange(new object[] { "ADM", "SIST", "COM", "VTA" });
-            cmbModulo.Location = new Point(250, 207);
+            cmbModulo.Location = new Point(219, 155);
+            cmbModulo.Margin = new Padding(3, 2, 3, 2);
             cmbModulo.Name = "cmbModulo";
-            cmbModulo.Size = new Size(125, 28);
+            cmbModulo.Size = new Size(110, 23);
             cmbModulo.TabIndex = 5;
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(466, 65);
+            btnAceptar.Location = new Point(408, 49);
+            btnAceptar.Margin = new Padding(3, 2, 3, 2);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(132, 29);
+            btnAceptar.Size = new Size(116, 22);
             btnAceptar.TabIndex = 6;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
@@ -107,18 +111,19 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(466, 133);
+            btnCancelar.Location = new Point(408, 100);
+            btnCancelar.Margin = new Padding(3, 2, 3, 2);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(132, 29);
+            btnCancelar.Size = new Size(116, 22);
             btnCancelar.TabIndex = 7;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // Inicio
+            // frmInicio
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(702, 277);
+            ClientSize = new Size(614, 279);
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
             Controls.Add(cmbModulo);
@@ -127,9 +132,10 @@
             Controls.Add(lblModulo);
             Controls.Add(lblContraseña);
             Controls.Add(lblUsuario);
-            Name = "Inicio";
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "frmInicio";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "frmInicio";
+            Text = "Inicio";
             Load += Inicio_Load;
             ResumeLayout(false);
             PerformLayout();
