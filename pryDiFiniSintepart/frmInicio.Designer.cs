@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             lblUsuario = new Label();
             lblContraseña = new Label();
             lblModulo = new Label();
@@ -132,6 +133,7 @@
             Controls.Add(lblModulo);
             Controls.Add(lblContraseña);
             Controls.Add(lblUsuario);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "frmInicio";
             StartPosition = FormStartPosition.CenterScreen;
