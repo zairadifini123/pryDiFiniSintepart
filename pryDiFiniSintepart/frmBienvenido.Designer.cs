@@ -61,7 +61,9 @@
             ClientSize = new Size(734, 287);
             Controls.Add(btnAceptar);
             Controls.Add(lblTitulo);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "frmBienvenido";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Bienvenido";
